@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38514CD379DB29052B2A594F /* libPods-MawiDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE96C71FD0C3513638F1C309 /* libPods-MawiDemoTests.a */; };
+		8423526024406C7A00B1B435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423525F24406C7A00B1B435 /* AppDelegate.swift */; };
+		8423526924406C8000B1B435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8423526824406C8000B1B435 /* Assets.xcassets */; };
+		8423526C24406C8000B1B435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8423526A24406C8000B1B435 /* LaunchScreen.storyboard */; };
+		842352A52440747500B1B435 /* MeasurementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842352782440747500B1B435 /* MeasurementCell.swift */; };
+		842352A82440747500B1B435 /* MeasurementListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423527B2440747500B1B435 /* MeasurementListViewModel.swift */; };
+		842352A92440747500B1B435 /* MeasurementListVC+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423527C2440747500B1B435 /* MeasurementListVC+Actions.swift */; };
+		842352AB2440747500B1B435 /* MeasurementListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423527E2440747500B1B435 /* MeasurementListViewController.swift */; };
+		842352AC2440747500B1B435 /* MeasurementListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423527F2440747500B1B435 /* MeasurementListConfigurator.swift */; };
+		842352AF2440747500B1B435 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842352852440747500B1B435 /* Measurement.swift */; };
+		842352B42440747500B1B435 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423528F2440747500B1B435 /* DateFormatter.swift */; };
+		842352C12440752A00B1B435 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842352C02440752A00B1B435 /* RealmManager.swift */; };
+		842352CC2440779F00B1B435 /* Pods_MawiDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842352C42440779F00B1B435 /* Pods_MawiDemo.framework */; };
+		842352CD2440779F00B1B435 /* Pods_MawiDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 842352C42440779F00B1B435 /* Pods_MawiDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84A1D0E52443876300CAF9B3 /* GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D0E42443876300CAF9B3 /* GeneratorTests.swift */; };
+		84A1D0E7244389D900CAF9B3 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D0E6244389D900CAF9B3 /* Validator.swift */; };
+		84A1D0E924438A4600CAF9B3 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D0E824438A4600CAF9B3 /* Scanner.swift */; };
+		84A1D0EE2443B4D500CAF9B3 /* MeasureVMProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D0ED2443B4D500CAF9B3 /* MeasureVMProtocols.swift */; };
+		84A1D0F02443B4FB00CAF9B3 /* MeasureRecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D0EF2443B4FB00CAF9B3 /* MeasureRecordViewModel.swift */; };
+		84A1D0F52443B9B600CAF9B3 /* MeasureRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D0F42443B9B600CAF9B3 /* MeasureRecordViewController.swift */; };
+		84A1D0FE2444DFBD00CAF9B3 /* MeasureRecordVC+BackgroundTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D0FD2444DFBD00CAF9B3 /* MeasureRecordVC+BackgroundTask.swift */; };
+		84A1D1002444E84500CAF9B3 /* MeasureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D0FF2444E84500CAF9B3 /* MeasureType.swift */; };
+		84A997D024409F5900C36F00 /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A997CF24409F5900C36F00 /* MeasureViewController.swift */; };
+		84A997D82440A7ED00C36F00 /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A997D72440A7ED00C36F00 /* MeasureView.swift */; };
+		84A997DA2440AB5800C36F00 /* TimerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A997D92440AB5800C36F00 /* TimerSettings.swift */; };
+		84A997DC2440B1F700C36F00 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A997DB2440B1F700C36F00 /* Generator.swift */; };
+		84FECB7A24432623003093AC /* ScanSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECB7924432623003093AC /* ScanSettings.swift */; };
+		84FECB7C244326E0003093AC /* GeneratorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECB7B244326E0003093AC /* GeneratorSettings.swift */; };
+		84FECB7E2443278A003093AC /* ValidatorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECB7D2443278A003093AC /* ValidatorSettings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84A1D0DF2443843C00CAF9B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8423525424406C7A00B1B435 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8423525B24406C7A00B1B435;
+			remoteInfo = MawiDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		842352D82440779F00B1B435 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				842352CD2440779F00B1B435 /* Pods_MawiDemo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		65A8760D3424A30746AA5230 /* Pods-MawiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MawiDemo.release.xcconfig"; path = "Target Support Files/Pods-MawiDemo/Pods-MawiDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6A4CF84AD1B87C8E1F2DC4DD /* Pods-MawiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MawiDemo.debug.xcconfig"; path = "Target Support Files/Pods-MawiDemo/Pods-MawiDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8423525C24406C7A00B1B435 /* MawiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MawiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8423525F24406C7A00B1B435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8423526824406C8000B1B435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8423526B24406C8000B1B435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8423526D24406C8000B1B435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842352782440747500B1B435 /* MeasurementCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementCell.swift; sourceTree = "<group>"; };
+		8423527B2440747500B1B435 /* MeasurementListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementListViewModel.swift; sourceTree = "<group>"; };
+		8423527C2440747500B1B435 /* MeasurementListVC+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeasurementListVC+Actions.swift"; sourceTree = "<group>"; };
+		8423527E2440747500B1B435 /* MeasurementListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementListViewController.swift; sourceTree = "<group>"; };
+		8423527F2440747500B1B435 /* MeasurementListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementListConfigurator.swift; sourceTree = "<group>"; };
+		842352852440747500B1B435 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		8423528F2440747500B1B435 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		842352C02440752A00B1B435 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		842352C32440779F00B1B435 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		842352C42440779F00B1B435 /* Pods_MawiDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MawiDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		842352C52440779F00B1B435 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		842352C62440779F00B1B435 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		842352C72440779F00B1B435 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		842352C82440779F00B1B435 /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		842352C92440779F00B1B435 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A1D0DA2443843B00CAF9B3 /* MawiDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MawiDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A1D0DE2443843C00CAF9B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A1D0E42443876300CAF9B3 /* GeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorTests.swift; sourceTree = "<group>"; };
+		84A1D0E6244389D900CAF9B3 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		84A1D0E824438A4600CAF9B3 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		84A1D0ED2443B4D500CAF9B3 /* MeasureVMProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureVMProtocols.swift; sourceTree = "<group>"; };
+		84A1D0EF2443B4FB00CAF9B3 /* MeasureRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureRecordViewModel.swift; sourceTree = "<group>"; };
+		84A1D0F42443B9B600CAF9B3 /* MeasureRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureRecordViewController.swift; sourceTree = "<group>"; };
+		84A1D0FD2444DFBD00CAF9B3 /* MeasureRecordVC+BackgroundTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasureRecordVC+BackgroundTask.swift"; sourceTree = "<group>"; };
+		84A1D0FF2444E84500CAF9B3 /* MeasureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureType.swift; sourceTree = "<group>"; };
+		84A997CF24409F5900C36F00 /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
+		84A997D72440A7ED00C36F00 /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
+		84A997D92440AB5800C36F00 /* TimerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSettings.swift; sourceTree = "<group>"; };
+		84A997DB2440B1F700C36F00 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		84FECB7924432623003093AC /* ScanSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanSettings.swift; sourceTree = "<group>"; };
+		84FECB7B244326E0003093AC /* GeneratorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorSettings.swift; sourceTree = "<group>"; };
+		84FECB7D2443278A003093AC /* ValidatorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorSettings.swift; sourceTree = "<group>"; };
+		F556E5C772AD2E3D0EC62C22 /* Pods-MawiDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MawiDemoTests.release.xcconfig"; path = "Target Support Files/Pods-MawiDemoTests/Pods-MawiDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE96C71FD0C3513638F1C309 /* libPods-MawiDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MawiDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5DA9C5AE61A5B102150544 /* Pods-MawiDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MawiDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-MawiDemoTests/Pods-MawiDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8423525924406C7A00B1B435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842352CC2440779F00B1B435 /* Pods_MawiDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A1D0D72443843B00CAF9B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38514CD379DB29052B2A594F /* libPods-MawiDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E5798738B7919858122614F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A4CF84AD1B87C8E1F2DC4DD /* Pods-MawiDemo.debug.xcconfig */,
+				65A8760D3424A30746AA5230 /* Pods-MawiDemo.release.xcconfig */,
+				FF5DA9C5AE61A5B102150544 /* Pods-MawiDemoTests.debug.xcconfig */,
+				F556E5C772AD2E3D0EC62C22 /* Pods-MawiDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8423525324406C7A00B1B435 = {
+			isa = PBXGroup;
+			children = (
+				8423525E24406C7A00B1B435 /* MawiDemo */,
+				84A1D0DB2443843C00CAF9B3 /* MawiDemoTests */,
+				8423525D24406C7A00B1B435 /* Products */,
+				842352C22440779F00B1B435 /* Frameworks */,
+				5E5798738B7919858122614F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8423525D24406C7A00B1B435 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8423525C24406C7A00B1B435 /* MawiDemo.app */,
+				84A1D0DA2443843B00CAF9B3 /* MawiDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8423525E24406C7A00B1B435 /* MawiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8423525F24406C7A00B1B435 /* AppDelegate.swift */,
+				842352762440747500B1B435 /* RandomUserList */,
+				84A997CE24409F2000C36F00 /* MeasureVC */,
+				842352822440747500B1B435 /* Model */,
+				8423528D2440747500B1B435 /* Workers */,
+				8423526824406C8000B1B435 /* Assets.xcassets */,
+				8423526A24406C8000B1B435 /* LaunchScreen.storyboard */,
+				8423526D24406C8000B1B435 /* Info.plist */,
+			);
+			path = MawiDemo;
+			sourceTree = "<group>";
+		};
+		842352762440747500B1B435 /* RandomUserList */ = {
+			isa = PBXGroup;
+			children = (
+				842352772440747500B1B435 /* Cells */,
+				8423527E2440747500B1B435 /* MeasurementListViewController.swift */,
+				8423527C2440747500B1B435 /* MeasurementListVC+Actions.swift */,
+				8423527B2440747500B1B435 /* MeasurementListViewModel.swift */,
+				8423527F2440747500B1B435 /* MeasurementListConfigurator.swift */,
+			);
+			path = RandomUserList;
+			sourceTree = "<group>";
+		};
+		842352772440747500B1B435 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				842352782440747500B1B435 /* MeasurementCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		842352822440747500B1B435 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				842352852440747500B1B435 /* Measurement.swift */,
+				84A1D0FF2444E84500CAF9B3 /* MeasureType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8423528D2440747500B1B435 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				842352C02440752A00B1B435 /* RealmManager.swift */,
+				8423528F2440747500B1B435 /* DateFormatter.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		842352C22440779F00B1B435 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				842352C32440779F00B1B435 /* Charts.framework */,
+				842352C42440779F00B1B435 /* Pods_MawiDemo.framework */,
+				842352C52440779F00B1B435 /* Realm.framework */,
+				842352C62440779F00B1B435 /* RealmSwift.framework */,
+				842352C72440779F00B1B435 /* RxCocoa.framework */,
+				842352C82440779F00B1B435 /* RxRelay.framework */,
+				842352C92440779F00B1B435 /* RxSwift.framework */,
+				FE96C71FD0C3513638F1C309 /* libPods-MawiDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84A1D0DB2443843C00CAF9B3 /* MawiDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				84A1D0E42443876300CAF9B3 /* GeneratorTests.swift */,
+				84A1D0DE2443843C00CAF9B3 /* Info.plist */,
+			);
+			path = MawiDemoTests;
+			sourceTree = "<group>";
+		};
+		84A1D0EC2443B4C500CAF9B3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84A1D0ED2443B4D500CAF9B3 /* MeasureVMProtocols.swift */,
+				84A1D0EF2443B4FB00CAF9B3 /* MeasureRecordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84A1D0F12443B99800CAF9B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84A997CF24409F5900C36F00 /* MeasureViewController.swift */,
+				84A1D0F42443B9B600CAF9B3 /* MeasureRecordViewController.swift */,
+				84A1D0FD2444DFBD00CAF9B3 /* MeasureRecordVC+BackgroundTask.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84A997CE24409F2000C36F00 /* MeasureVC */ = {
+			isa = PBXGroup;
+			children = (
+				84A997D72440A7ED00C36F00 /* MeasureView.swift */,
+				84A1D0F12443B99800CAF9B3 /* Controller */,
+				84A1D0EC2443B4C500CAF9B3 /* ViewModel */,
+				84A997DB2440B1F700C36F00 /* Generator.swift */,
+				84A1D0E824438A4600CAF9B3 /* Scanner.swift */,
+				84A1D0E6244389D900CAF9B3 /* Validator.swift */,
+				84FECB78244325F3003093AC /* Settings */,
+			);
+			path = MeasureVC;
+			sourceTree = "<group>";
+		};
+		84FECB78244325F3003093AC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				84A997D92440AB5800C36F00 /* TimerSettings.swift */,
+				84FECB7B244326E0003093AC /* GeneratorSettings.swift */,
+				84FECB7924432623003093AC /* ScanSettings.swift */,
+				84FECB7D2443278A003093AC /* ValidatorSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8423525B24406C7A00B1B435 /* MawiDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8423527024406C8000B1B435 /* Build configuration list for PBXNativeTarget "MawiDemo" */;
+			buildPhases = (
+				4DCF39CBD08FBFAD43F5F6F7 /* [CP] Check Pods Manifest.lock */,
+				8423525824406C7A00B1B435 /* Sources */,
+				8423525924406C7A00B1B435 /* Frameworks */,
+				8423525A24406C7A00B1B435 /* Resources */,
+				842352D82440779F00B1B435 /* Embed Frameworks */,
+				6C8F94A9C79626EEAC0E2B72 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MawiDemo;
+			productName = MawiDemo;
+			productReference = 8423525C24406C7A00B1B435 /* MawiDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84A1D0D92443843B00CAF9B3 /* MawiDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A1D0E32443843C00CAF9B3 /* Build configuration list for PBXNativeTarget "MawiDemoTests" */;
+			buildPhases = (
+				3213294751A52E3C4B55E76B /* [CP] Check Pods Manifest.lock */,
+				84A1D0D62443843B00CAF9B3 /* Sources */,
+				84A1D0D72443843B00CAF9B3 /* Frameworks */,
+				84A1D0D82443843B00CAF9B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A1D0E02443843C00CAF9B3 /* PBXTargetDependency */,
+			);
+			name = MawiDemoTests;
+			productName = MawiDemoTests;
+			productReference = 84A1D0DA2443843B00CAF9B3 /* MawiDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8423525424406C7A00B1B435 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ivan Bolgov";
+				TargetAttributes = {
+					8423525B24406C7A00B1B435 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					84A1D0D92443843B00CAF9B3 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 8423525B24406C7A00B1B435;
+					};
+				};
+			};
+			buildConfigurationList = 8423525724406C7A00B1B435 /* Build configuration list for PBXProject "MawiDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8423525324406C7A00B1B435;
+			productRefGroup = 8423525D24406C7A00B1B435 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8423525B24406C7A00B1B435 /* MawiDemo */,
+				84A1D0D92443843B00CAF9B3 /* MawiDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8423525A24406C7A00B1B435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8423526C24406C8000B1B435 /* LaunchScreen.storyboard in Resources */,
+				8423526924406C8000B1B435 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A1D0D82443843B00CAF9B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3213294751A52E3C4B55E76B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MawiDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DCF39CBD08FBFAD43F5F6F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MawiDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C8F94A9C79626EEAC0E2B72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MawiDemo/Pods-MawiDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MawiDemo/Pods-MawiDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MawiDemo/Pods-MawiDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8423525824406C7A00B1B435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A1D0E924438A4600CAF9B3 /* Scanner.swift in Sources */,
+				842352B42440747500B1B435 /* DateFormatter.swift in Sources */,
+				84A997DC2440B1F700C36F00 /* Generator.swift in Sources */,
+				84A997DA2440AB5800C36F00 /* TimerSettings.swift in Sources */,
+				84A1D0FE2444DFBD00CAF9B3 /* MeasureRecordVC+BackgroundTask.swift in Sources */,
+				84A997D82440A7ED00C36F00 /* MeasureView.swift in Sources */,
+				84A1D0E7244389D900CAF9B3 /* Validator.swift in Sources */,
+				842352AB2440747500B1B435 /* MeasurementListViewController.swift in Sources */,
+				842352AC2440747500B1B435 /* MeasurementListConfigurator.swift in Sources */,
+				842352A52440747500B1B435 /* MeasurementCell.swift in Sources */,
+				842352A92440747500B1B435 /* MeasurementListVC+Actions.swift in Sources */,
+				842352C12440752A00B1B435 /* RealmManager.swift in Sources */,
+				842352AF2440747500B1B435 /* Measurement.swift in Sources */,
+				84A1D0EE2443B4D500CAF9B3 /* MeasureVMProtocols.swift in Sources */,
+				842352A82440747500B1B435 /* MeasurementListViewModel.swift in Sources */,
+				84A997D024409F5900C36F00 /* MeasureViewController.swift in Sources */,
+				84A1D1002444E84500CAF9B3 /* MeasureType.swift in Sources */,
+				8423526024406C7A00B1B435 /* AppDelegate.swift in Sources */,
+				84A1D0F02443B4FB00CAF9B3 /* MeasureRecordViewModel.swift in Sources */,
+				84FECB7E2443278A003093AC /* ValidatorSettings.swift in Sources */,
+				84FECB7C244326E0003093AC /* GeneratorSettings.swift in Sources */,
+				84FECB7A24432623003093AC /* ScanSettings.swift in Sources */,
+				84A1D0F52443B9B600CAF9B3 /* MeasureRecordViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A1D0D62443843B00CAF9B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A1D0E52443876300CAF9B3 /* GeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84A1D0E02443843C00CAF9B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8423525B24406C7A00B1B435 /* MawiDemo */;
+			targetProxy = 84A1D0DF2443843C00CAF9B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8423526A24406C8000B1B435 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8423526B24406C8000B1B435 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8423526E24406C8000B1B435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8423526F24406C8000B1B435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8423527124406C8000B1B435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A4CF84AD1B87C8E1F2DC4DD /* Pods-MawiDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DU7RQJED2A;
+				INFOPLIST_FILE = MawiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Bolgov.MawiDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8423527224406C8000B1B435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A8760D3424A30746AA5230 /* Pods-MawiDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DU7RQJED2A;
+				INFOPLIST_FILE = MawiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Bolgov.MawiDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84A1D0E12443843C00CAF9B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF5DA9C5AE61A5B102150544 /* Pods-MawiDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DU7RQJED2A;
+				INFOPLIST_FILE = MawiDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Bolgov.MawiDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MawiDemo.app/MawiDemo";
+			};
+			name = Debug;
+		};
+		84A1D0E22443843C00CAF9B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F556E5C772AD2E3D0EC62C22 /* Pods-MawiDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DU7RQJED2A;
+				INFOPLIST_FILE = MawiDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Bolgov.MawiDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MawiDemo.app/MawiDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8423525724406C7A00B1B435 /* Build configuration list for PBXProject "MawiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8423526E24406C8000B1B435 /* Debug */,
+				8423526F24406C8000B1B435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8423527024406C8000B1B435 /* Build configuration list for PBXNativeTarget "MawiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8423527124406C8000B1B435 /* Debug */,
+				8423527224406C8000B1B435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A1D0E32443843C00CAF9B3 /* Build configuration list for PBXNativeTarget "MawiDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A1D0E12443843C00CAF9B3 /* Debug */,
+				84A1D0E22443843C00CAF9B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8423525424406C7A00B1B435 /* Project object */;
+}

@@ -1,0 +1,6 @@
+module Pods_MawiDemoTests {
+  umbrella header "Pods-MawiDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
